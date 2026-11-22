@@ -1,0 +1,448 @@
+﻿/*Removes the browser's default margin and padding from all elements and sets the box-sizing property to border-box for all elements. This means that the width and height of an element will include its padding and border, making it easier to manage layout and spacing.*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+/*styles the overall webpage background*/
+body{
+    background-color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a1dbf;
+}
+
+/*styling the container*/
+.container{
+    background-color:  rgb(7, 3, 30);;
+    width: 80%;
+    max-width: 1200px;
+    min-height: 85vh;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+/*Styling the navbar*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 24px 8%;
+}
+
+/*Styling the logo*/
+.logo{
+    text-decoration: none;
+    color: #5b35eb;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+/*styling the logo-icon*/
+.logo-icon{
+    font-size: 13px;
+    
+}
+
+/*styling the nav-links*/
+.nav-links{
+    display: flex;
+    align-items:center;
+    gap: 20px;
+}
+
+/*styling the nav-links a*/
+.nav-links a{
+    text-decoration: none;
+    color:white;
+    font-size: 12px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/*styling the nav-link a with hover*/
+.nav-links a:hover{
+    color: #5b35eb;
+}
+
+/*styling the hire-btn*/
+.hire-btn{
+    background-color: #5b35eb;
+    color: white;
+    text-decoration: none;
+    align-items: end;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+/*styling the heir-btn*/
+.hire-btn:hover{
+    background-color: #3a1dbf;
+
+/*styling the hero section*/
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    min-height: 520px;
+    padding: 40px 8% 50px;
+}
+
+.hero-content{
+    flex: 1;
+}
+
+/*The hero content paragraph*/
+.hero-content p{
+    color: white;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.hero-content h1{
+    color: white;
+    font-size: 44px;
+}
+.hero-content h2{
+    color:#5b35eb;
+    margin-top: 5px;
+    font-size: 28px;
+}
+.hero-description{
+    margin-top: 10px;
+}
+.hero-button{
+    margin-top: 25px;
+
+}
+.hero-button a{
+    text-decoration: none;
+    color: white;
+}
+.primary-btn{
+    font-size: 12px;
+    background-color:#3a1dbf;
+    padding: 9px 2%;
+    border-radius: 5px;
+}
+.secondary-btn{
+    font-size: 12px;
+}
+.socials{
+    margin-top: 25px;
+}
+.socials a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+}
+.profile-card{
+    width: 300px;
+    flex: 0 0 300px;
+}
+.profile-card img{
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #5b35eb;
+}
+.profile-card h5,
+.profile-card p{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin: 10px 0 0;
+}
+
+.about-section{
+    display: flex;
+    align-items: center;
+    min-height: 520px;
+    padding: 40px 8% 50px;
+}
+
+.about-content{
+    max-width: 760px;
+}
+
+.about-content h2{
+    margin-bottom: 12px;
+    color: white;
+    font-size: 38px;
+}
+
+.about-content h3{
+    margin-bottom: 18px;
+    color: #5b35eb;
+    font-size: 24px;
+}
+
+.about-content p{
+    color: white;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.projects-section{
+    min-height: 520px;
+    padding: 40px 8% 50px;
+}
+
+.projects-section h2{
+    color: white;
+    font-size: 38px;
+}
+
+.projects-section h3{
+    margin: 8px 0 28px;
+    color: #5b35eb;
+    font-size: 24px;
+}
+
+.projects-grid{
+    display: flex;
+    gap: 25px;
+}
+
+.project-card{
+    flex: 1;
+    padding: 25px;
+    border: 1px solid rgba(91, 53, 235, 0.35);
+    border-radius: 12px;
+}
+
+.project-card h4{
+    margin-bottom: 12px;
+    color: white;
+    font-size: 18px;
+}
+
+.project-card p{
+    color: white;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.project-card .project-technologies{
+    margin-top: 16px;
+    color: #8d78ef;
+}
+
+.contact-section{
+    min-height: 520px;
+    padding: 40px 8% 50px;
+}
+
+.contact-section h2{
+    color: white;
+    font-size: 38px;
+}
+
+.contact-section h3{
+    margin: 8px 0 12px;
+    color: #5b35eb;
+    font-size: 24px;
+}
+
+.contact-introduction{
+    max-width: 620px;
+    color: white;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.contact-grid{
+    display: flex;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.contact-card{
+    flex: 1;
+    min-width: 0;
+    padding: 22px;
+    border: 1px solid rgba(91, 53, 235, 0.35);
+    border-radius: 12px;
+}
+
+.contact-card h4{
+    margin-bottom: 14px;
+    color: white;
+}
+
+.contact-card a,
+.contact-card p{
+    display: block;
+    color: #d8d8d8;
+    font-size: 13px;
+    line-height: 1.8;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-card a:hover{
+    color: #8d78ef;
+}
+
+@media (max-width: 900px){
+    .container{
+        width: calc(100% - 40px);
+        margin: 20px auto;
+        min-height: calc(100vh - 40px);
+    }
+
+    .navbar{
+        padding: 20px 6%;
+    }
+
+    .hero{
+        gap: 40px;
+        min-height: auto;
+        padding: 45px 6%;
+    }
+
+    .hero-content h1{
+        font-size: 36px;
+    }
+
+    .hero-content h2{
+        font-size: 23px;
+    }
+
+    .profile-card{
+        width: 240px;
+        flex-basis: 240px;
+    }
+
+    .profile-card img{
+        height: 240px;
+    }
+
+    .projects-grid,
+    .contact-grid{
+        flex-wrap: wrap;
+    }
+
+    .project-card,
+    .contact-card{
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .about-section,
+    .projects-section,
+    .contact-section{
+        padding: 40px 6%;
+    }
+}
+
+@media (max-width: 600px){
+    .container{
+        width: calc(100% - 20px);
+        margin: 10px auto;
+        border-radius: 12px;
+    }
+
+    .navbar{
+        flex-wrap: wrap;
+        gap: 18px;
+        padding: 18px 5%;
+    }
+
+    .nav-links{
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .nav-links a{
+        font-size: 11px;
+    }
+
+    .hire-btn{
+        margin-left: auto;
+    }
+
+    .hero{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+        padding: 35px 5% 45px;
+    }
+
+    .hero-content h1{
+        font-size: 32px;
+    }
+
+    .hero-content h2{
+        font-size: 21px;
+    }
+
+    .hero-button{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .primary-btn{
+        padding: 10px 14px;
+    }
+
+    .socials a{
+        margin-right: 18px;
+    }
+
+    .profile-card{
+        width: min(260px, 90%);
+        flex-basis: auto;
+        margin: 0 auto;
+    }
+
+    .profile-card img{
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .about-section,
+    .projects-section,
+    .contact-section{
+        min-height: auto;
+        padding: 35px 5% 45px;
+    }
+
+    .about-content h2,
+    .projects-section h2,
+    .contact-section h2{
+        font-size: 32px;
+    }
+
+    .about-content h3,
+    .projects-section h3,
+    .contact-section h3{
+        font-size: 20px;
+    }
+
+    .projects-grid,
+    .contact-grid{
+        flex-direction: column;
+    }
+
+    .project-card,
+    .contact-card{
+        flex-basis: auto;
+        width: 100%;
+    }
+}
+
+
