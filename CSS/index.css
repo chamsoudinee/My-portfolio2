@@ -1,4 +1,4 @@
-﻿/*Removes the browser's default margin and padding from all elements and sets the box-sizing property to border-box for all elements. This means that the width and height of an element will include its padding and border, making it easier to manage layout and spacing.*/
+/* Reset: Removes the default browser spacing. */
 *{
     margin: 0%;
     padding: 0%;
@@ -6,14 +6,14 @@
 }
 
 
-/*styles the overall webpage background*/
+/* Main page styles. */
 body{
     background-color:black;
     font-family: Arial, Helvetica, sans-serif;
     color: #3a1dbf;
 }
 
-/*styling the container*/
+/* Main website container. */
 .container{
     background-color:  rgb(7, 3, 30);;
     width: 80%;
@@ -25,7 +25,7 @@ body{
 
 }
 
-/*Styling the navbar*/
+/* Navigation bar styles. */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ body{
     padding: 24px 8%;
 }
 
-/*Styling the logo*/
+/* Logo styles. */
 .logo{
     text-decoration: none;
     color: #5b35eb;
@@ -43,20 +43,20 @@ body{
 
 }
 
-/*styling the logo-icon*/
+/* Logo icon styles. */
 .logo-icon{
     font-size: 13px;
     
 }
 
-/*styling the nav-links*/
+/* Navigation link group styles. */
 .nav-links{
     display: flex;
     align-items:center;
     gap: 20px;
 }
 
-/*styling the nav-links a*/
+/* Individual navigation link styles. */
 .nav-links a{
     text-decoration: none;
     color:white;
@@ -65,12 +65,12 @@ body{
     transition: color 0.3s ease;
 }
 
-/*styling the nav-link a with hover*/
+/* Navigation link color on mouse hover. */
 .nav-links a:hover{
     color: #5b35eb;
 }
 
-/*styling the hire-btn*/
+/* Contact button styles. */
 .hire-btn{
     background-color: #5b35eb;
     color: white;
@@ -81,12 +81,11 @@ body{
     transition: background-color 0.3s ease;
 }
 
-/*styling the heir-btn*/
+/* Contact button color on mouse hover. */
 .hire-btn:hover{
     background-color: #3a1dbf;
-
-/*styling the hero section*/
 }
+/* Home page introduction section. */
 .hero{
     display: flex;
     justify-content: space-between;
@@ -100,7 +99,7 @@ body{
     flex: 1;
 }
 
-/*The hero content paragraph*/
+/* Introduction text. */
 .hero-content p{
     color: white;
     font-size: 12px;
@@ -110,6 +109,8 @@ body{
     color: white;
     font-size: 44px;
 }
+
+/* Professional title. */
 .hero-content h2{
     color:#5b35eb;
     margin-top: 5px;
@@ -118,6 +119,8 @@ body{
 .hero-description{
     margin-top: 10px;
 }
+
+/* Container for main buttons. */
 .hero-button{
     margin-top: 25px;
 
@@ -132,9 +135,13 @@ body{
     padding: 9px 2%;
     border-radius: 5px;
 }
+
+/* Text-style secondary button. */
 .secondary-btn{
     font-size: 12px;
 }
+
+/* Social media icons. */
 .socials{
     margin-top: 25px;
 }
@@ -144,6 +151,8 @@ body{
     color: white;
     margin-right: 25px;
 }
+
+/* Profile photo card. */
 .profile-card{
     width: 300px;
     flex: 0 0 300px;
@@ -165,6 +174,7 @@ body{
     margin: 10px 0 0;
 }
 
+/* About page styles. */
 .about-section{
     display: flex;
     align-items: center;
@@ -194,6 +204,7 @@ body{
     line-height: 1.8;
 }
 
+/* Projects page styles. */
 .projects-section{
     min-height: 520px;
     padding: 40px 8% 50px;
@@ -239,6 +250,7 @@ body{
     color: #8d78ef;
 }
 
+/* Contact page styles. */
 .contact-section{
     min-height: 520px;
     padding: 40px 8% 50px;
